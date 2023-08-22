@@ -1,0 +1,40 @@
+﻿TACHES,DUREE,GROUPE,DEPENDANCES
+1.Définition_problématique,2,État_de_l'art,NONE
+2.Analyses_des_risques,2,État_de_l'art,1.Définition_problématique
+3.Recrutement_équipe_projet,2,État_de_l'art,2.Analyses_des_risques
+4.Fiche_descriptive_mission,2,État_de_l'art,3.Recrutement_équipe_projet
+5.Synthèse_coût_site_TER,3,État_de_l'art,4.Fiche_descriptive_mission
+6.Analyse_trafic_historique,2,État_de_l'art,4.Fiche_descriptive_mission
+7.Synthèse_CUP_2022,3,État_de_l'art,4.Fiche_descriptive_mission
+8.État_de_l'art,1,État_de_l'art,5.Synthèse_coût_site_TER 6.Analyse_trafic_historique 7.Synthèse_CUP_2022
+9.Analyse_cadence_déchargement_STT,6,Plan_de_production,8.État_de_l'art
+10.Analyse_cadence_flux_HN,6,Plan_de_production,8.État_de_l'art
+11.Planification_effectif_STT,4,Plan_de_production,9.Analyse_cadence_déchargement_STT 10.Analyse_cadence_flux_HN
+12.Analyse_cadence_moyens_propres,5,Plan_de_production,8.État_de_l'art
+13.Analyse_retard_transport,3,Plan_de_production,8.État_de_l'art
+14.Créer_outil_d'aide_décision,5,Plan_de_production,11.Planification_effectif_STT 12.Analyse_cadence_moyens_propres 13.Analyse_retard_transport
+15.Prévisio_V2,6,Plan_de_production,8.État_de_l'art
+16.Synthèse_FTP_Peak_période,2,Plan_de_production,8.État_de_l'art
+17.Planifier_FTT_nécessaire,1,Plan_de_production,14.Créer_outil_d'aide_décision 15.Prévisio_V2 16.Synthèse_FTP_Peak_période
+18.Recrutement_interimaire,4,Plan_de_production,17.Planifier_FTT_nécessaire
+19.Analyser_stratégie_pause,3,Organisation_Peak_période,18.Recrutement_interimaire
+20.Analyse_plan_transport_national,10,Organisation_Peak_période,8.État_de_l'art
+21.Envisager_redirection_flux,6,Organisation_Peak_période,20.Analyse_plan_transport_national
+22.Plan_transport_Peak_période,8,Organisation_Peak_période,21.Envisager_redirection_flux
+23.Calculer_temps_rupture_alimentation,2,Organisation_Peak_période,22.Plan_transport_Peak_période
+24.REX_agents_CE_chantier_manuel,3,Chantier_manuel,18.Recrutement_interimaire
+25.Analyser_previsions_Peak_période,5,Chantier_manuel,18.Recrutement_interimaire
+26.Déterminer_date_chantier_manuel,4,Chantier_manuel,24.REX_agents_CE_chantier_manuel 25.Analyser_previsions_Peak_période
+27.Communication_agents_Peak_période,2,Chantier_manuel,26.Déterminer_date_chantier_manuel
+28.Recrutement_animateurs_chantier_manuel,2,Chantier_manuel,27.Communication_agents_Peak_période
+29.Groupe_travail_chantier_manuel,4,Chantier_manuel,28.Recrutement_animateurs_chantier_manuel
+30.Calculer_productivité_chantier_manuel,6,Chantier_manuel,29.Groupe_travail_chantier_manuel
+31.Gestion_Peak_période,45,Organisation_Peak_période,30.Calculer_productivité_chantier_manuel
+32.Bilan_économique,3,Bilan_mission,31.Gestion_Peak_période
+33.REX_Peak_période,3,Bilan_mission,32.Bilan_économique
+34.Standardisation_PDP,2,Bilan_mission,33.REX_Peak_période
+35.Formation_ROP_RLP_PDP,5,Bilan_mission,34.Standardisation_PDP
+36.Formation_CE_PDP,12,Bilan_mission,35.Formation_ROP_RLP_PDP
+37.Formation_CE_gestion_intérimaire,15,Bilan_mission,36.Formation_CE_PDP
+38.Rédaction_rapport_M78,8,Bilan_mission,37.Formation_CE_gestion_intérimaire
+39.Préparation_soutenance_M78,5,Bilan_mission,38.Rédaction_rapport_M78

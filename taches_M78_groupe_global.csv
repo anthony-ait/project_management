@@ -1,0 +1,7 @@
+﻿TACHES,DUREE,GROUPE,DEPENDANCES
+1.État_de_l'art,12,État_de_l'art,NONE
+2.Plan_de_production,20,Plan_de_production,1.État_de_l'art
+3.Planification Peak période,26,Organisation_Peak_période,1.État_de_l'art
+4.Chantier_manuel,23,Chantier_manuel,2.Plan_de_production
+5.Gestion_Peak_période,45,Organisation_Peak_période,4.Chantier_manuel
+6.Bilan_mission,53,Bilan_mission,5.Gestion_Peak_période
